@@ -11,12 +11,12 @@ service AuthService {
 }
 
 message RegisterRequest {
-  string user_id = 1;
+  string email = 1;
+  string password = 2;
 }
 
 message RegisterResponse {
-  string access_token = 1;
-  string refresh_token = 2;
+  string user_id = 1;
 }
 
 message LoginRequest {
